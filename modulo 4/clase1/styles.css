@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.level-selector, .operations {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.level-selector select {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.operations p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.operations div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#end-btn {
+    background-color: #e74c3c;
+    margin-top: 15px;
+}
+
+#end-btn:hover {
+    background-color: #c0392b;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.problem {
+    font-size: 48px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#answer {
+    width: 100px;
+    height: 60px;
+    font-size: 36px;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+}
+
+.feedback {
+    height: 30px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.feedback.correct {
+    color: #27ae60;
+}
+
+.feedback.incorrect {
+    color: #e74c3c;
+}
+
+.results {
+    text-align: center;
+}
+
+.results h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.results p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#play-again-btn {
+    margin-top: 20px;
+} 
