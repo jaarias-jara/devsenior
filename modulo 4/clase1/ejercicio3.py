@@ -1,3 +1,6 @@
+import os
+import time  # Para añadir una pequeña pausa antes de limpiar la pantalla
+
 class Coche:# clase coche   
     def __init__(self, marca, modelo, ano):#constructor
         # Atributos privados
@@ -52,3 +55,13 @@ if __name__ == "__main__": #si el archivo se ejecuta como programa principal
         print(f"Año actualizado a: {mi_coche.get_ano()}")#imprime el nuevo ano
     else:
         print("No se pudo actualizar el año (debe ser mayor al año actual)") #imprime el mensaje
+    
+    # Pausa para que el usuario pueda ver los resultados antes de limpiar la pantalla
+    print("\nEl programa terminará y la pantalla se limpiará en 3 segundos...")
+    time.sleep(13)
+    
+    # Limpiar la pantalla según el sistema operativo
+    if os.name == "nt":  # Para Windows
+        os.system("cls")
+    else:  # Para Unix (Linux, macOS)
+        os.system("clear")
